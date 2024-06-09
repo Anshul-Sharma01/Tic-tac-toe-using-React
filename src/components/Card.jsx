@@ -1,12 +1,12 @@
 import Icon from "./Icon.jsx";
 
 
-function Card( { player, onPlay, index }){
+function Card( { player, onPlay, index  }){
     let icon = <Icon />
-    if(player == 'X'){
-        icon = <Icon name='cross' />
-    }else if(player == 'O'){
-        icon = <Icon name='circle' />
+    if(player == "X"){
+        icon = <Icon name="cross" />
+    }else if(player == "O"){
+        icon = <Icon name="circle"/>
     }
     return(
         <>

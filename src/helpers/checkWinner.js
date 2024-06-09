@@ -2,10 +2,10 @@ function isWinner(board, symbol){
     if(board[0] == board[1] && board[1] == board[2] && board[2] == symbol){
         return symbol;
     }
-    if(board[3] == board[4] && board[5] == board[5] && board[2] == symbol){
+    if(board[3] == board[4] && board[4] == board[5] && board[5] == symbol){
         return symbol;
     }
-    if(board[6] == board[7] && board[7] == board[8] && board[2] == symbol){
+    if(board[6] == board[7] && board[7] == board[8] && board[8] == symbol){
         return symbol;
     }
     
@@ -18,15 +18,17 @@ function isWinner(board, symbol){
     if(board[2] == board[5] && board[5] == board[8] && board[8] == symbol){
         return symbol;
     }
+
+
     
-    if(board[0] == board[4] && board[4] == board[8] && board[0] == symbol){
+    if(board[0] == board[4] && board[4] == board[8] && board[4] == symbol){
         return symbol;
     }
     if(board[2] == board[4] && board[4] == board[6] && board[4] == symbol){
         return symbol;
     }
     else{
-        return " ";
+        return "";
     }
 }
 
